@@ -1,14 +1,15 @@
-class Univariate():
-    def quanqual(dataset):
-        qual=[]
+class Univariable():
+    def quanQual(dataset):
         quan=[]
+        qual=[]
         for columnName in dataset.columns:
             #print(columnName)
-            if(dataset[columnName].dtype=='O'):
-               # print("Qual")
+            if (dataset[columnName].dtype=='O'):
+                #print("qual")
                 qual.append(columnName)
             else:
-                #print("Quan")
+                #print("quan")
                 quan.append(columnName)
         return quan,qual
+        
         
